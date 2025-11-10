@@ -1,4 +1,4 @@
-# Namespace: System.*
+# Namespace: Event.System.*
 
 High-level abstraction and utility layer for managing the application's SignalR connection lifecycle and WebSocket state.
 
