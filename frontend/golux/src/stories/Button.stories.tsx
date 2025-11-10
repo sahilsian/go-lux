@@ -17,6 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     args: {
         variant: 'primary',
+        label: "Primary"
     },
 };
 
@@ -26,7 +27,9 @@ export const PrimaryIcon: Story = {
         icon: {
             component: <Pencil size={"100%"} />,
             size: "small"
-        }
+        },
+        label: "Primary"
+
     },
 };
 
@@ -34,6 +37,7 @@ export const PrimaryIcon: Story = {
 export const Secondary: Story = {
     args: {
         variant: 'secondary',
+        label: "Secondary"
     },
 };
 
@@ -43,6 +47,7 @@ export const SecondaryIcon: Story = {
         icon: {
             component: <Pencil size={"100%"} />,
             size: "small"
-        }
+        },
+        label: "Secondary"
     },
 };

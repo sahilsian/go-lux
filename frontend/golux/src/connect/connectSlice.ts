@@ -45,7 +45,6 @@ export const createConnection =
                 console.error('Failed to stop existing connection:', error);
             }
         }
-
         try {
             const newConnection = new signalR.HubConnectionBuilder()
                 .withUrl(url)

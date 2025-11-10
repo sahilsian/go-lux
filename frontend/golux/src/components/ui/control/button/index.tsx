@@ -14,20 +14,21 @@ interface ButtonProps {
         component: React.ReactElement<React.SVGProps<SVGSVGElement>>,
         size: "small" | "medium" | "large"
     } | null
+    label: string
 }
 
 const Container = styled.button<ContainerProps>`
     ${props=>getButtonType(props.variant)}
 `;
 
-const Button = ({variant, onClick, icon}:ButtonProps) => {
+const Button = ({variant, onClick, icon, label="Button"}:ButtonProps) => {
     return (
     <Container
         variant={variant}
         onClick={onClick}
     >
         {icon && <Icon size={icon.size} icon={icon?.component}></Icon>}
-        <Typography value="Button" />
+        <Typography value={label} />
     </Container>
     )
 }
